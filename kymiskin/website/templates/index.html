@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+{% load static %}
+<html dir="ltr" lang="en-US">
+
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="kymiskin" />
+
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700|Arimo:400,700|Playfair+Display:400,400i,700|Cookie" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/dark.css' %}" type="text/css" />
+
+<link rel="stylesheet" href="{% static 'demos/spa/spa.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'demos/spa/css/fonts/spa-icons.css' %}" type="text/css" />
+
+<link rel="stylesheet" href="{% static 'css/font-icons.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/animate.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'demos/spa/css/fonts.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="{% static 'css/colors3dda.css?color=78c9d1' %}" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="{% static 'include/rs-plugin/css/settings.css' %}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{% static 'include/rs-plugin/css/layers.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'include/rs-plugin/css/navigation.css' %}">
+<meta name="keywords" content="kymiskin, kymi skin, skin care">
+<meta name="description" content="Welcome to Kymi Skin & Laser, a full trusted Med-Spa where expert skin care professionals work as a team to offer the highest quality service to clients to achieve healthy beautiful vibrant skin..">
+<meta name="author" content="kymiskin">
+<title>Kymi Skin & Laser Med-Spa | Home</title>
+<style>
+
+		.tp-caption.Fashion-SmallText, .Fashion-SmallText,
+		.tp-caption.Fashion-TextBlock, .Fashion-TextBlock {
+			font-family: 'Lato';
+			color: #FFF;
+		}
+
+		.tp-caption.Fashion-BigDisplay, .Fashion-BigDisplay {
+			font-family: 'Cookie';
+			letter-spacing: 1px;
+			font-weight: 700;
+			color: #FFF;
+			text-transform: capitalize;
+		}
+
+		.restaurant-reviews .flex-control-nav {
+			top: auto;
+			bottom: 25px;
+		}
+	</style>
+</head>
+<body class="stretched">
+
+<div id="wrapper" class="clearfix">
+
+<header id="header" class="no-sticky transparent-header dark" data-responsive-class="dark">
+<div id="header-wrap">
+<div class="container clearfix">
+<div id="primary-menu-trigger"><i style="zoom:2" class="icon-reorder"></i></div>
+
+<div id="logo">
+	<a href="#" class="standard-logo" style="padding-top: 20px;">
+		<h3 class="text-logo"  style="color: #26e0dd;background:linear-gradient(to right,#FF69B4,#26e0dd);padding:3px;border-radius:5px;text-shadow: 1px 1px 3px rgb(0,0,0, .5);">
+			<big>K</big>YMI <big>S</big>KIN <b>&</b> <big>L</big>ASER
+		</h3>
+	</a>
+
+	<!--mobile version-->
+	<a href="#" class="retina-logo" style="padding-top: 25px">
+		<h3 class="text-logo"  style="color: #26e0dd;background:linear-gradient(to right,#FF69B4,#26e0dd);padding:3px;border-radius:5px;text-shadow: 1px 1px 3px rgb(0,0,0, .5);">
+			<big >K</big>YMI <big>S</big>KIN <b>&</b> <big">L</big>ASER
+		</h3>
+	</a>
+	<!--
+		style="color: #26e0dd;background:linear-gradient(to right,#26e0dd,#FF69B4);padding:3px;border-radius:5px;text-shadow: 1px 1px 3px rgb(0,0,0, .5);"-->
+	<!--image logo
+	<a href="#" class="standard-logo"><img style="zoom:0.8;box-shadow: 2px pink;border-radius: 5px" src="{% static 'demos/spa/images/kymiskin.jpg' %}" alt="kymiskin"></a>
+
+	<a href="#" class="retina-logo"><img style="zoom: 0.8;padding-top: 10px;box-shadow: 2px pink;border-radius: 5px" src="{% static 'demos/spa/images/kymiskin.jpg' %}" alt="kymiskin"></a>
+
+-->
+</div>
+
+<nav id="primary-menu" class="not-dark">
+<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="0">
+	<li class="current"><a href="{% url 'website:index' %}"><div style="color: #FF69B4">Home</div></a></li>
+	<li><a href="{% url 'website:about' %}"><div style="color: #26e0dd">About</div></a></li>
+	<li><a href="{% url 'website:services' %}"><div style="color: #26e0dd">Services</div></a></li>
+	<li><a href="{% url 'website:contact' %}"><div style="color: #26e0dd">Contact</div></a></li>
+	
+</ul>
+</nav>
+</div>
+</div>
+</header>
+
+<section id="slider" class="slider-element revslider-wrap full-screen clearix">
+
+<div id="rev_slider_10_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="fashion1" style="background-color:transparent;padding:0px;">
+
+<div id="rev_slider_10_1" class="rev_slider" style="display:none;" data-version="5.0.7">
+<ul>
+<!--Beginning of one home slide-->
+
+<li data-index="rs-36" class="dark" data-transition="fadetoleftfadefromright" data-fstransition="fade" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Enjoy Nature" data-description="">
+
+<img src="{% static 'images/blackGirl.png' %}" style='background-color:#ffffff' alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+<div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" id="slide-36-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5; background: rgba(0,0,0,0.2)">
+</div>
+
+<div class="tp-caption -  " id="slide-35-layer-1" data-x="['right','right','right','right']" data-hoffset="['40','40','40','40']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['40','40','40','40']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:pointer;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]' data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400;padding:3px 8px 3px 8px;border-style:solid;border-width:1px;border-radius:30px 30px 30px 30px;"><i class="icon-angle-down"></i>
+</div>
+
+<div class="tp-caption Fashion-BigDisplay   tp-resizeme" id="slide-36-layer-5" data-x="['center','center','center','center']" data-hoffset="['255','231','211','62']" data-y="['middle','middle','middle','middle']" data-voffset="['-30','-18','-48','-28']" data-fontsize="['80','50','50','56']" data-lineheight="['100','50','50','50']" data-width="['none','265','265','265']" data-height="['none','100','100','100']" data-whitespace="['nowrap','normal','normal','normal']" data-transform_idle="o:1;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="700" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="width: 90%;font-size: 30px;z-index: 9; white-space: nowrap;color: #FF69B4">Restore, Rejuvenate, Enhance</div>
+
+
+<div class="tp-caption Fashion-SmallText   tp-resizeme" id="slide-36-layer-7" data-x="['center','center','center','center']" data-hoffset="['105','130','105','-39']" data-y="['middle','middle','middle','middle']" data-voffset="['-85','-85','-110','-95']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 11; white-space: nowrap;">
+</div>
+
+<div class="tp-caption Fashion-TextBlock   tp-resizeme" id="slide-36-layer-8" data-x="['center','center','center','center']" data-hoffset="['224','254','230','80']" data-y="['middle','middle','middle','middle']" data-voffset="['120','130','79','110']" data-fontsize="['20','17','17','17']" data-lineheight="['40','30','30','30']" data-width="500" data-height="161" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="200" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="white-space: normal; font-weight: 600;color: #26e0dd;font-size: 80px">Your #1 recommended Med-Spa in Kumasi<br />
+
+</div>
+</li>
+ <!--End of one slide-->
+
+<li data-index="rs-38" class="dark" data-transition="slideoververtical" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
+
+<img src="{% static 'demos/spa/images/videos/1.jpg' %}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+
+<div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="{% static 'images/micro.mp4' %}" data-videopreload="preload" data-videoloop="true" data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false" data-nextslideatend="true"></div>
+
+<div class="tp-caption -  " id="slide-38-layer-1" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power2.easeOut;" data-transform_out="auto:auto;s:1500;e:Power2.easeOut;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255, 255, 255, 1.00);"><div class="coverdark"></div>
+</div>
+
+<div class="tp-caption -  " id="slide-36-layer-3" data-x="['right','right','right','right']" data-hoffset="['40','40','40','40']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['40','40','40','40']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:pointer;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]' data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #FFF;padding:3px 8px 3px 8px;border-color:rgba(255,255,255, 1.00);border-style:solid;border-width:1px;border-radius:30px 30px 30px 30px;"><i class="icon-angle-down"></i>
+</div>
+
+<div class="tp-caption Fashion-BigDisplay   tp-resizeme" id="slide-38-layer-2" data-x="['left','center','center','center']" data-hoffset="['40','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','-50','-130','-130']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1500;e:Power2.easeInOut;s:1500;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="900" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap; line-height: 100px;color: #26e0dd;font-size: 90px"><a style="font-size: 50px;color:#FF69B4;text-shadow: 1px 1px 3px rgb(0,0,0, .5);">Restore, <br>Rejuvenate, Enhance</a>
+</div>
+
+<div class="tp-caption Fashion-BigDisplay   tp-resizeme" id="slide-38-layer-3" data-x="['left','middle','middle','center']" data-hoffset="['40','-100','-90','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','0','-90','-70']" data-width="none" data-fontweight="['400','400','400','900']" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1500;e:Power2.easeInOut;s:1500;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; font-size: 16px;text-transform: uppercase; line-height: 22px; font-weight: 400; font-family: 'Lato';">
+</div>
+
+</li>
+</ul>
+	<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+</div>
+</div>
+</section>
+
+
+<section id="content">
+	<div class="content-wrap notoppadding" >
+		<div id="section-about" class="section page-section nomargin" style="background:rgb(206,214,206);">
+			<div class="container clearfix">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="heading-block nobottomborder bottommargin-sm">
+						<h3 class="cookie-font capitalize" style="color: #FF69B4;text-shadow:1px 1px 5px rgb(0,0,0, .6">ABOUT US</h3>
+						</div>
+						<p style="color:rgb(53,74,53); font-size: 16px; font-weight: 700">
+							
+							Welcome to Kymi Skin & Laser, a full trusted Med-Spa where expert skin care professionals work as a team to offer the highest quality service to clients to achieve healthy beautiful vibrant skin and body under the direction of Dr. Rita Nyamah (a well trained and licensed body and skin treatment expert with certificate  from Russia & U.S.A)
+						</p>
+						<button onclick="document.location.href = '/about';" style="background: #FF69B4" class="button button-3d nomargin" type="submit">Read More</button><br><br>
+					</div>
+					<div class="col-lg-6">
+						<img class="bottommargin-lg divcenter img-fluid" src="{% static 'images/dr.rita.jpg' %}" alt="Dr. Rita Nyamah">
+					</div>
+				</div>
+			</div>
+			<div class="section nomargin clearfix" style="background: #FFF url({% static 'demos/spa/images/others/2.jpg' %}) no-repeat top left;">
+				<div class="container clearfix">
+					<div class="row">
+						<div class="col-lg-7 offset-lg-5">
+							<div class="heading-block noborder bottommargin-sm">
+								<h3 style="color: #FF69B4;text-shadow:1px 1px 5px rgb(0,0,0, .6">MEET DR. RITA NYAMAH</h3>
+							</div>
+							
+							<p style="color: #26e0dd; font-weight: 800">Meet our specialist to know more about your skin and the various treatment available and to learn 
+							more our body contouring treatment of interest. Learn which procedure is best for your body, how 
+							many sessions to get desire results and gain a realistic view of outcome.
+							</p>
+
+						</div>
+						<div class="clear"></div>
+					<div class="row">
+						<div class="col-md-4 bottommargin-sm center">
+							<div class="feature-box media-box">
+								<div class="fbox-media" style="padding: 0 40px;">
+									<a href="#">
+										<img class="rounded-circle img-thumbnail" src="{% static 'images/skincare.webp' %}" alt="Why choose Us?">
+									</a>
+								</div>
+							<div class="fbox-desc">
+							<h3><span class="subtitle cookie-font" style="color:#FF69B4;text-shadow:1px 1px 3px rgb(0,0,0, .8">Skin Care Treatment.</span></h3>
+							<p style="color: #26e0dd; font-weight: 700">
+								Classic Facial: A thorough skin analysis and in depth view into your lifestyle, genes and daily routine to come up with classic glow treatment plan.
+								Our facial include deep cleansing, steaming followed by an exfoliation..
+							</p>
+						</div>
+							<a href="{% url 'website:skin_details' %}" class="button button-rounded" style="margin: 20px 0 0 0;background:#FF69B4 ">Read More</a>
+
+						</div>
+					</div>
+					<div class="col-md-4 bottommargin-sm center">
+						<div class="feature-box media-box">
+							<div class="fbox-media" style="padding: 0 40px;">
+								<a href="#">
+									<img class="rounded-circle img-thumbnail" src="{% static 'images/body.webp' %}" alt="Effective Planning">
+								</a>
+							</div>
+							<div class="fbox-desc">
+								<h3>
+									<span class="subtitle cookie-font" style="color:#FF69B4;text-shadow:1px 1px 3px rgb(0,0,0, .6)">Body Treatment (Body Contouring).</span>
+								</h3>
+								<p style="color: #26e0dd; font-weight: 700;">The G5 machine is similar to a high intense lymphatic massage, which works on breaking down 
+								fatty deposits. It goes much deeper than the therapist can, different heads are used to mimic 
+								different massage techniques...
+								</p>
+							</div>
+							
+							<a href="{% url 'website:body_details' %}" class="button button-rounded" style="margin: 20px 0 0 0;background:#FF69B4">Read More</a>
+							</div>
+						</div>
+					<div class="col-md-4 bottommargin-sm center">
+						<div class="feature-box media-box">
+							<div class="fbox-media" style="padding: 0 40px;">
+								<a href="#">
+									<img class="rounded-circle img-thumbnail" src="{% static 'images/weight.webp' %}" alt="kymiskin">
+								</a>
+							</div>
+						<div class="fbox-desc">
+ 							<h3><span class="subtitle cookie-font" style="color:#FF69B4;text-shadow:1px 1px 3px rgb(0,0,0, .6">Weight Management.</span></h3>
+							<p style="color: #26e0dd; font-weight: 700">Our advanced body slimming technology reduces fat by using ultrasonic waves to 
+							naturally slim, shape and contour the body using leading edge technology, an ultrasound 
+							frequency wand is used..
+							</p>
+						</div>
+						<a href="{% url 'website:weight_details' %}" class="button button-rounded" style="margin: 20px 0 0 0;background:#FF69B4">Read More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="video-wrap d-block d-lg-none d-xl-none">
+		<div class="video-overlay" style="background: rgba(255,255,255,0.9);"></div>
+	</div>
+	<div class="center">
+		<img class="img-responsive" src="{% static 'demos/spa/images/others/bg-tab.jpg' %}" alt="">
+	</div>
+</div>
+</div>
+
+	<section id="section-testimonials" class="section parallax nobottommargin page-section dark" style="background-image: url({% static 'demos/spa/images/others/bg-testimonials.jpg' %}); padding: 140px 0; background-size: cover" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+		<div class="container clearfix">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="heading-block nobottomborder">
+						<h3 style="color: #FF69B4;text-shadow:1px 1px 5px rgb(0,0,0, .6)">TESTIMONIALS</h3>
+					</div>
+					<div class="fslider restaurant-reviews" data-arrows="false" data-animation="slide">
+						<div class="flexslider">
+							<div class="slider-wrap">
+								<div class="slide" style="color: #26e0dd">
+									<p class="lead">
+									"I have had personal encounter with Dr. Rita and i must say, she really understands what she does"
+									</p>
+									<span class="font-primary"><strong>Rachel Asare</strong></span><br>
+										<i class="icon-star3"></i> 
+										<i class="icon-star3"></i> 
+										<i class="icon-star3"></i> 
+										<i class="icon-star3"></i> 
+										<i class="icon-star-half-full"></i>
+								</div>
+								<div class="slide" style="color: #26e0dd">
+									<p class="lead">
+									"Dr. Rita is the best i have known during our training session in Russia, i am very happy she is ready to help the people of Kumasi - Ghana to beautify and treat their skin. Congratulations"
+									</p>
+									<span class="font-primary"><strong>Dr. Kinsley Sosu Mensah</strong></span><br>
+										<i class="icon-star3"></i> 
+										<i class="icon-star3"></i> 
+										<i class="icon-star3"></i> 
+										<i class="icon-star-half-full"></i> 
+										<i class="icon-star-empty"></i>
+								</div>
+								<div class="slide" style="color: #26e0dd">
+									<p class="lead">
+									"Kymi Skin? Wow Rita!! am very for you and i know Kumasi will truly benefit from your specialties and expertise, God bless you and God bless Kymi"
+									</p>
+									<span class="font-primary"><strong>Dr. Sampson Abedi</strong></span><br>
+										<i class="icon-star3"></i> 
+										<i class="icon-star3"></i> 
+										<i class="icon-star3"></i> 
+										<i class="icon-star3"></i> 
+										<i class="icon-star3"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section style="padding-left: 20px" id="section-contact" class="section nomargin nobottompadding nobg page-section">
+		<div class="row clearfix">
+			<div class="col-md-5 offset-md-1 col-10 col-offset-1">
+				<div class="heading-block nobottomborder bottommargin-sm">
+					<h3 class="cookie-font capitalize" style="color: #FF69B4;text-shadow:2px 2px 10px rgb(0,0,0, .6">
+						CONTACT
+					</h3>
+				</div>
+				<div class="contact-widget">
+					<div class="contact-form-result"></div>
+						
+						<form class="nobottommargin" id="template-contactform" name="template-contactform" action="" method="post">
+							<div class="form-process"></div>
+								<div class="col_half">
+									<label for="template-contactform-name">Name <small>*</small></label>
+									<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
+								</div>
+								<div class="col_half col_last">
+									<label for="template-contactform-phone">Phone</label>
+									<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control" />
+								</div>
+								
+								<div class="clear"></div>
+
+								<div class="col_full">
+									<label for="template-contactform-email">Email <small>*</small></label>
+									<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
+								</div>
+
+								<div class="clear"></div>
+
+								<div class="col_full">
+									<label for="template-contactform-message">Message <small>*</small></label>
+									<textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
+								</div>
+								<div class="col_full hidden">
+									<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+								</div>
+								<div class="col_full nobottommargin">
+									<button style="background: #FF69B4" class="button button-3d nomargin" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">
+										Send Message
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				<div class="col-md-6">
+					<img class="topmargin" src="{% static 'demos/spa/images/others/3.jpg' %}" alt="kymiskin">
+				</div>
+			</div>
+		</section>
+	</div>
+	</section>
+
+<footer id="footer" class="noborder" style="background-color: #F5F5F5;">
+	<div id="copyrights" class="nobg">
+		<div class="container clearfix">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="widget clearfix">
+						<div>
+							<h5>Headquarters:</h5>
+							<address class="nobottommargin">
+								<div class="text-muted">
+									<p class="nobottommargin">
+										Inside Okubi Hotel<br>
+										opposite Kumasi Senior High School, Abrepo - Kumasi<br>
+									</p>
+								</div>
+							</address>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="widget clearfix">
+						<div>
+							<h5>Contact:</h5>
+							<address class="nobottommargin">
+								<abbr title="Phone Number"><strong>Phone:</strong></abbr> +233 502 955 799<br>
+								<abbr title="Email Address"><strong>Email:</strong></abbr> <a href="mailto:kymi.skin1@gmail.com">kymi.skin1@gmail.com</a>
+							</address>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 tright">
+					<div class="fright topmargin-sm clearfix">
+						<a href="#" class="social-icon si-small si-colored si-facebook">
+							<i class="icon-facebook"></i>
+							<i class="icon-facebook"></i>
+						</a>
+						<a href="#" class="social-icon si-small si-colored si-twitter">
+							<i class="icon-twitter"></i>
+							<i class="icon-twitter"></i>
+							</a>
+							<a href="#" class="social-icon si-small si-colored si-gplus">
+							<i class="icon-gplus"></i>
+							<i class="icon-gplus"></i>
+							</a>
+							<a href="#" class="social-icon si-small si-colored si-whatsapp">
+							<i class="icon-whatsapp"></i>
+							<i class="icon-whatsapp"></i>
+
+							<a href="#" class="social-icon si-small si-colored si-linkedin">
+							<i class="icon-linkedin"></i>
+							<i class="icon-linkedin"></i>
+						</a>
+					</div>
+					
+					<div class="clear"></div>
+						<a target="_blank" href="">Copyright © <script>document.write(new Date().getFullYear());</script> kymi skin and laser med-spa</a>
+					</div>
+				</div>
+			</div>
+		</div>
+</footer>
+</div>
+
+<div id="gotoTop" class="icon-angle-up"></div>
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/functions.js' %}"></script>
+<script src="{% static 'include/rs-plugin/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'include/rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
+<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.video.min.js' %}"></script>
+<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script>
+		var tpj=jQuery;
+
+		var revapi10;
+		tpj(document).ready(function() {
+			if(tpj("#rev_slider_10_1").revolution == undefined){
+				revslider_showDoubleJqueryError("#rev_slider_10_1");
+			}else{
+				revapi10 = tpj("#rev_slider_10_1").show().revolution({
+					sliderType:"standard",
+					jsFileLocation:"include/rs-plugin/js/",
+					sliderLayout:"fullscreen",
+					dottedOverlay:"none",
+					delay:7000,
+					navigation: {
+						keyboardNavigation:"on",
+						keyboard_direction: "horizontal",
+						mouseScrollNavigation:"off",
+						onHoverStop:"off",
+						touch:{
+							touchenabled:"on",
+							swipe_threshold: 75,
+							swipe_min_touches: 1,
+							swipe_direction: "vertical",
+							drag_block_vertical: false
+						}
+						,
+						bullets: {
+							enable:true,
+							hide_onmobile:false,
+							style:"uranus",
+							hide_onleave:false,
+							direction:"vertical",
+							h_align:"left",
+							v_align:"center",
+							h_offset:30,
+							v_offset:0,
+							space:8,
+							tmp:'<span class="tp-bullet-inner"></span>'
+						},
+						touch:{
+							touchenabled:"off",
+							swipe_treshold : 75,
+							swipe_min_touches : 1,
+							drag_block_vertical:false,
+							swipe_direction:"horizontal"
+						}
+					},
+					responsiveLevels:[1240,1024,778,480],
+					gridwidth:[1140,1024,778,480],
+					gridheight:[800,700,960,720],
+					lazyType:"none",
+					shadow:0,
+					spinner:"off",
+					stopLoop:"on",
+					shuffle:"off",
+					autoHeight:"off",
+					fullScreenAlignForce:"off",
+					fullScreenOffsetContainer: "",
+					fullScreenOffset: "",
+					hideThumbsOnMobile:"off",
+					hideSliderAtLimit:0,
+					hideCaptionAtLimit:0,
+					hideAllCaptionAtLilmit:0,
+					debugMode:false,
+					fallbacks: {
+						simplifyAll:"off",
+						nextSlideOnWindowFocus:"off",
+						disableFocusListener:false,
+					}
+				});
+			}
+
+			revapi10.bind("revolution.slide.onloaded",function (e) {
+				setTimeout( function(){ SEMICOLON.slider.sliderParallaxDimensions(); }, 200 );
+			});
+
+			revapi10.bind("revolution.slide.onchange",function (e,data) {
+				SEMICOLON.slider.revolutionSliderMenu();
+			});
+
+		});	/*ready*/
+
+	</script>
+</body>
+
+
+</html>

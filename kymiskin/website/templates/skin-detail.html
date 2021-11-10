@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+{% load static %}
+<html dir="ltr" lang="en-US">
+
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="kymiskin" />
+
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700|Arimo:400,700|Playfair+Display:400,400i,700|Cookie" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'style.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/dark.css' %}" type="text/css" />
+
+<link rel="stylesheet" href="{% static 'demos/spa/spa.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'demos/spa/css/fonts/spa-icons.css' %}" type="text/css" />
+
+<link rel="stylesheet" href="{% static 'css/font-icons.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/animate.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'demos/spa/css/fonts.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="{% static 'css/colors3dda.css?color=78c9d1' %}" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="{% static 'include/rs-plugin/css/settings.css' %}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{% static 'include/rs-plugin/css/layers.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'include/rs-plugin/css/navigation.css' %}">
+<meta name="keywords" content="kymiskin, kymi skin, skin care">
+<meta name="description" content="Welcome to Kymi Skin & Laser, a full trusted Med-Spa where expert skin care professionals work as a team to offer the highest quality service to clients to achieve healthy beautiful vibrant skin..">
+<meta name="author" content="kymiskin">
+<title>Skin Care Treatment Details - Kymi Skin & Laser Med-Spa</title>
+<style>
+
+		.tp-caption.Fashion-SmallText, .Fashion-SmallText,
+		.tp-caption.Fashion-TextBlock, .Fashion-TextBlock {
+			font-family: 'Lato';
+			color: #FFF;
+		}
+
+		.tp-caption.Fashion-BigDisplay, .Fashion-BigDisplay {
+			font-family: 'Cookie';
+			letter-spacing: 1px;
+			font-weight: 700;
+			color: #FFF;
+			text-transform: capitalize;
+		}
+
+		.restaurant-reviews .flex-control-nav {
+			top: auto;
+			bottom: 25px;
+		}
+	</style>
+</head>
+<body class="stretched" data-loader-color="#103e4d"  >
+
+<div id="wrapper" class="clearfix">
+
+<header id="header" class="no-sticky transparent-header" style="background:#999997;">
+<div id="header-wrap">
+<div class="container clearfix">
+<div id="primary-menu-trigger"><i style="zoom:2;" class="icon-reorder"></i></div>
+
+<div id="logo">
+<a href="#" class="standard-logo" style="padding-top: 20px;">
+		<h3 class="text-logo"  style="color: #26e0dd;background:linear-gradient(to right,#FF69B4,#26e0dd);padding:3px;border-radius:5px;text-shadow: 1px 1px 3px rgb(0,0,0, .5);">
+			<big>K</big>YMI <big>S</big>KIN <b>&</b> <big>L</big>ASER
+		</h3>
+	</a>
+
+	<!--mobile version-->
+	<a href="#" class="retina-logo" style="padding-top: 25px">
+		<h3 class="text-logo"  style="color: #26e0dd;background:linear-gradient(to right,#FF69B4,#26e0dd);padding:3px;border-radius:5px;text-shadow: 1px 1px 3px rgb(0,0,0, .5);">
+			<big >K</big>YMI <big>S</big>KIN <b>&</b> <big">L</big>ASER
+		</h3>
+	</a>
+</div>
+
+<nav id="primary-menu" class="not-dark">
+<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="0">
+<li class="current"><a href="{% url 'website:index' %}"><div style="color: #26e0dd">Home</div></a></li>
+<li><a href="{% url 'website:about' %}"><div style="color: #26e0dd">About</div></a></li>
+<li><a href="{% url 'website:services' %}"><div style="color: #FF69B4">Services</div></a></li>
+<li><a href="{% url 'website:contact' %}"><div style="color: #26e0dd">Contact</div></a></li>
+
+</ul>
+</nav>
+</div>
+</div>
+</header>
+
+
+
+<section id="content">
+	<div class="content-wrap notoppadding" >
+		<div id="section-about" class="section page-section nomargin"style="background:#f6e6d2;">
+			<center style="padding:0;width: fit-content;margin:auto;border-bottom: 1px solid black;">
+				<h1 style="margin:0;font-family: georgia;color: #707965;">SKIN CARE TREATMENT</h1>
+			</center>
+			<div class="section nomargin clearfix"style="background:#f6e6d2;">
+				<div class="container clearfix"style="background:#fff6eb;padding:10px 25px 5px 25px;">
+					<div class="row">
+						<div class="col-lg-7 offset-lg-5" style="margin:auto;padding-top:20px;">
+							<center>
+							<img src="{% static 'images/skincare.webp' %}">
+							<br><br><br>
+							<p style="color:#707965; font-weight: 800">
+								<!-- SKIN TREATMENT DETAILS HERE -->
+<b style="color: #FF69B4;font-size: 18px">CLASSIC FACIAL</b><br>
+A thorough skin analysis and in depth view into your lifestyle, genes and daily 
+routine to come up with classic glow treatment plan.
+Our facial include deep cleansing, steaming followed by an exfoliation. This facial include 15 
+minute mask that is suited best for your skin needs, then serums, moisturiser and spf.
+<br><br>
+<b style="color: #FF69B4;font-size: 18px">ACNE FACIAL</b><br>
+This facial is an alternative treatment designed to treat the root cause of the acne 
+with minimal side effects. It starts with double cleansing, steaming then extraction and exfoliating. 
+A peel or mask is applied, followed by AHA or BHA toner. Serums with high frequency to kill Acne 
+causing bacteria, then moisturiser and spf.
+<br><br>
+<b style="color: #FF69B4;font-size: 18px">DERMAPLANE FACIAL</b><br> this treatment begins with double cleansing, jojoba or organ oil is applied, 
+then dermaplane begins (removal of vellus hair and dead skin cells), the face is cleaned with warm 
+towel, followed with toner, then Serums, jade roller, moisturiser and spf. This service is to be 
+repeated every four to six weeks.
+This treatment instantly reveals smoother and cleaner skin suited for all skin types, dermaplaning 
+is manual, chemical free treatment that immediately improves skin tone, clarity and texture.
+<br><br>
+<b style="color: #FF69B4;font-size: 18px">MICRODERMABROSION FACIAL</b><br> 
+Is a Non invasive chemical free cosmetic procedure used to remove the 
+top layer of dry dead skin cells to reveal healthy young looking skin and improve over all skin tone 
+and texture.
+We start by deep cleansing, then use a diamond tip to slough off two to three weeks of dead skin, 
+warm towel is then used to clean face, A hydrating mask follows, ice globe to sooth the face, 
+some serums, moisturisers and spf.
+<br><br>
+<b style="color: #FF69B4;font-size: 18px">KING FACIAL</b><br> 
+This luxurious treatment is perfect for men, Purifying facial includes deep cleansing, 
+dermaplane, steam, extended extraction, a tailored mask to your skin needs, high frequency, ice 
+glosses to cool the skin. The experience ends with a relaxing head, neck and shoulder massage. 
+After the facial our king’s skin will look luminous, lifted and smooth.
+<br><br>
+<b style="color: #FF69B4;font-size: 18px">KYMI DELUXE FACIAL</b><br> 
+Our signature glow facial gives you the red carpet glow that all celebrities 
+have. This facial includes: double cleanse, steam, exfoliation and toner. We examine the skin to 
+see if you need any extraction and perform if necessary. A light peel or enzyme peel is then 
+applied followed by serums, jade roller, moisturiser, LED therapy and spf.
+<br><br>
+<b style="color: #FF69B4;font-size: 18px">CHEMICAL GLOW PEEL</b><br>
+Is a medical grade technique used to improve the appearance of the skin. It is designed for skin 
+rejuvenation of all skin types, addresses skin hyperpigmentation, sun damage, oily skin. This peel 
+gently and effectively exfoliate while simultaneously hydrating and brightening the skin resulting in 
+a fresh dewy glow from within.
+<br><br>
+<b style="color: #FF69B4;font-size: 18px">Cellulite Reduction (60 minutes)</b><br>
+Cellulite is a term for the formation of lumps and dimples in the skin. Between 80 and 90 percent 
+of women will probably experience cellulite. We utilise FDA approved method to stimulate 
+collagen and breaking up the underlying fat accumulation.
+It eliminates toxins, improves lymphatic drainage, reduce swelling and cellulite appearance and 
+smooth skin is on the way.
+<br><br>
+<b style="color: #FF69B4;font-size: 18px">MICRONEEDLING</b><br>
+60 minutes (Vampire Facial)
+Rejuvenate your face with a micro needling facial treatment using micro channel tool to create tiny 
+channel in the epidermis which has been proven to increase serum absorption. 
+This is one of celebrity's known skin secret called; the Vampire Facial. Controlled injury treatment 
+that uses fine needles to puncture the skin with PRP or growth factors to rejuvenate the skin 
+(don’t worry your face would be numbed). 
+It treats and improves conditions like Acne, Acne scarring, fine lines and wrinkles. This typically is 
+performed in a series of four to six sessions spaced about a month apart.
+<br><br>
+<b style="color: #FF69B4;font-size: 18px">LED PHOTOTHERAPY (45 minutes)</b><br>
+This treatment is the secret to a beautiful youthful skin, it is used to fix skin problems such as 
+Acne. It also help improve the appearance of the skin revealing a noticeably firmer, smoother 
+texture.
+<br><br>
+<b style="color: #FF69B4;font-size: 18px">HYDRAFACIAL (60 minutes)</b><br>
+It a non-Invasive resurfacing facial that will enhance the health and appearance of the skin. It uses 
+patented technology starting with cleansing by removing the dead skin cells and excess sebum 
+from the skin. The skin is then infused with highly effective serum to plump nourish and hydrate 
+the skin.
+<br><br>
+<b style="color: #FF69B4;font-size: 18px">KYMI BACIAL (60 minutes)</b><br>
+Specifically created for the back, this treatment consists of deep pore cleansing, exfoliation, 
+steam, signature mask, toning, serums then finish with moisturiser.
+							</p>
+							
+							</center>
+						</div>
+						<div class="clear"></div>
+					<div class="row">
+					
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+
+	</div>
+	</section>
+
+
+
+
+
+
+
+
+<footer id="footer" class="noborder" style="background-color: #F5F5F5;">
+
+<div id="copyrights" class="nobg">
+<div class="container clearfix">
+<div class="row">
+<div class="col-lg-3">
+<div class="widget clearfix">
+<div>
+<h5>Headquarters:</h5>
+<address class="nobottommargin">
+<div class="text-muted">
+<p class="nobottommargin">Inside Okubi Hotel<br>
+opposite Kumasi Senior High School, Abrepo - Kumasi<br></p>
+</div>
+</address>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="widget clearfix">
+<div>
+<h5>Contact:</h5>
+<address class="nobottommargin">
+<abbr title="Phone Number"><strong>Phone:</strong></abbr> +233 502 955 799<br>
+<abbr title="Email Address"><strong>Email:</strong></abbr> <a href="mailto:kymi.skin1@gmail.com" class="__cf_email__" data-cfemail="e881868e87a88b89869e899bc68b8785">kymi.skin1@gmail.com</a>
+</address>
+</div>
+</div>
+</div>
+<div class="col-lg-6 tright">
+<div class="fright topmargin-sm clearfix">
+<a href="#" class="social-icon si-small si-colored si-facebook">
+<i class="icon-facebook"></i>
+<i class="icon-facebook"></i>
+</a>
+<a href="#" class="social-icon si-small si-colored si-twitter">
+<i class="icon-twitter"></i>
+<i class="icon-twitter"></i>
+</a>
+<a href="#" class="social-icon si-small si-colored si-gplus">
+<i class="icon-gplus"></i>
+<i class="icon-gplus"></i>
+</a>
+<a href="#" class="social-icon si-small si-colored si-pinterest">
+<i class="icon-pinterest"></i>
+<i class="icon-pinterest"></i>
+</a>
+<a href="#" class="social-icon si-small si-colored si-vimeo">
+<i class="icon-vimeo"></i>
+<i class="icon-vimeo"></i>
+</a>
+<a href="#" class="social-icon si-small si-colored si-github">
+<i class="icon-github"></i>
+<i class="icon-github"></i>
+</a>
+<a href="#" class="social-icon si-small si-colored si-yahoo">
+<i class="icon-yahoo"></i>
+<i class="icon-yahoo"></i>
+</a>
+<a href="#" class="social-icon si-small si-colored si-linkedin">
+<i class="icon-linkedin"></i>
+<i class="icon-linkedin"></i>
+</a>
+</div>
+<div class="clear"></div>
+<a target="_blank" href="">Copyright © <script>document.write(new Date().getFullYear());</script> kymi skin and laser med-spa</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+<div id="gotoTop" class="icon-angle-up"></div>
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+
+<script src="{% static 'js/functions.js' %}"></script>
+
+<script src="{% static 'include/rs-plugin/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'include/rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
+<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.video.min.js' %}"></script>
+<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'include/rs-plugin/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script>
+		var tpj=jQuery;
+
+		var revapi10;
+		tpj(document).ready(function() {
+			if(tpj("#rev_slider_10_1").revolution == undefined){
+				revslider_showDoubleJqueryError("#rev_slider_10_1");
+			}else{
+				revapi10 = tpj("#rev_slider_10_1").show().revolution({
+					sliderType:"standard",
+					jsFileLocation:"include/rs-plugin/js/",
+					sliderLayout:"fullscreen",
+					dottedOverlay:"none",
+					delay:7000,
+					navigation: {
+						keyboardNavigation:"on",
+						keyboard_direction: "horizontal",
+						mouseScrollNavigation:"off",
+						onHoverStop:"off",
+						touch:{
+							touchenabled:"on",
+							swipe_threshold: 75,
+							swipe_min_touches: 1,
+							swipe_direction: "vertical",
+							drag_block_vertical: false
+						}
+						,
+						bullets: {
+							enable:true,
+							hide_onmobile:false,
+							style:"uranus",
+							hide_onleave:false,
+							direction:"vertical",
+							h_align:"left",
+							v_align:"center",
+							h_offset:30,
+							v_offset:0,
+							space:8,
+							tmp:'<span class="tp-bullet-inner"></span>'
+						},
+						touch:{
+							touchenabled:"off",
+							swipe_treshold : 75,
+							swipe_min_touches : 1,
+							drag_block_vertical:false,
+							swipe_direction:"horizontal"
+						}
+					},
+					responsiveLevels:[1240,1024,778,480],
+					gridwidth:[1140,1024,778,480],
+					gridheight:[800,700,960,720],
+					lazyType:"none",
+					shadow:0,
+					spinner:"off",
+					stopLoop:"on",
+					shuffle:"off",
+					autoHeight:"off",
+					fullScreenAlignForce:"off",
+					fullScreenOffsetContainer: "",
+					fullScreenOffset: "",
+					hideThumbsOnMobile:"off",
+					hideSliderAtLimit:0,
+					hideCaptionAtLimit:0,
+					hideAllCaptionAtLilmit:0,
+					debugMode:false,
+					fallbacks: {
+						simplifyAll:"off",
+						nextSlideOnWindowFocus:"off",
+						disableFocusListener:false,
+					}
+				});
+			}
+
+			revapi10.bind("revolution.slide.onloaded",function (e) {
+				setTimeout( function(){ SEMICOLON.slider.sliderParallaxDimensions(); }, 200 );
+			});
+
+			revapi10.bind("revolution.slide.onchange",function (e,data) {
+				SEMICOLON.slider.revolutionSliderMenu();
+			});
+
+		});	/*ready*/
+
+	</script>
+</body>
+
+
+</html>
